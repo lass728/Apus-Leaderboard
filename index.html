@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apu's Journey - Ranking de Speed Run</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #292b28;
+            color: #edf3e4;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            background-color: #383a36;
+        }
+
+        .header img {
+            width: 210px;
+            height: 167px;
+            border-radius: 12px;
+            margin-right: 20px;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header-content p {
+            margin: 5px 0;
+        }
+
+        .header-content .platforms {
+            font-size: 14px;
+        }
+
+        .header-content a {
+            color: #edf3e4;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .header-content a:hover {
+            text-decoration: underline;
+        }
+
+        .discord-icon {
+            max-width: 32px;
+            max-height: 32px;
+            margin-right: 8px;
+        }
+
+       
+        .leaderboard {
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+            border-collapse: collapse;
+            background-color: #383a36;
+        }
+
+        .leaderboard th, .leaderboard td {
+            padding: 12px 20px;
+            text-align: left;
+        }
+
+        .leaderboard th {
+            background-color: #4c4e4b;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .leaderboard td {
+            border-top: 1px solid #4c4e4b;
+            position: relative;
+        }
+
+        
+        .speech-icon {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .leaderboard td .message-tooltip {
+            visibility: hidden;
+            background-color: #edf3e4;
+            color: #292b28;
+            text-align: center;
+            border-radius: 4px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .leaderboard td:hover .message-tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header img {
+                margin-bottom: 10px;
+            }
+
+            .leaderboard {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <img src="MISC/game.png" alt="Capa de Apu's Journey">
+        <div class="header-content">
+            <h1>Apu's Journey (2024)</h1>
+            <p class="platforms">PC, Mobile</p>
+            <a href="https://store.steampowered.com/app/2661730/Apus_Journey/" target="_blank" rel="noopener noreferrer">
+                <img src="MISC/Icon22.png" alt="Steam" class="discord-icon">
+                <span>Steam</span>
+            </a>
+            <a href="https://discord.gg/GJKUZXAVSd" target="_blank" rel="noopener noreferrer">
+                <img src="MISC/Icon23.png" alt="Discord" class="discord-icon">
+                <span>Discord</span>
+            </a>
+        </div>
+    </header>
+
+    
+    <table class="leaderboard">
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Player Time</th>
+                <th>Date</th>
+                <th>Platform</th>
+                <th>Version</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1. Pãozinho
+                    <img src="MISC/bicon.png" alt="Balão de fala" class="speech-icon">
+                    <span class="message-tooltip">Dedico essa speed run à minha namorada <3</span>
+                </td>
+                <td>31m 24s</td>
+                <td>25 de Setembro de 2024</td>
+                <td>PC</td>
+                <td>0.6</td>
+            </tr>
+            <tr>
+                <td>2. Dr XGB</td>
+                <td>1h 13m 02s</td>
+                <td>24 de Setembro de 2024</td>
+                <td>PC</td>
+                <td>0.6</td>
+            </tr>
+            <tr></tr>
+                <td>3. Micaela
+                    <img src="MISC/bicon.png" alt="Balão de fala" class="speech-icon">
+                    <span class="message-tooltip">Zzzz...</span>
+                </td>
+                <td>5h 15m 25s</td>
+                <td>21 de Setembro de 2024</td>
+                <td>Mobile</td>
+                <td>0.6</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
